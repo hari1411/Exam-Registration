@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Exam</title>
+    <link rel="stylesheet" href="css/exam.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="rules" class="rules">
+            <h2>Rules & Regulations</h2>
+            <ul>
+                <li>Read the question carefully before starting your essay.</li>
+                <li>Ensure your essay remains within the word limits provided for your selected mode.</li>
+                <li>Your essay will automatically be submitted when the time is up.</li>
+                <li>Keep an eye on the timer, which will show a warning when only 2 minutes remain.</li>
+                <li>Once submitted, you will not be able to edit your essay.</li>
+            </ul>
+        </div>
+        <h2 id="selectModeText">Select Exam Mode</h2>
+        <form id="examForm">
+            <div id="modeSelection">
+                <label>
+                    <input type="radio" name="mode" value="easy" onclick="selectMode('easy')"> Easy
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="moderate" onclick="selectMode('moderate')"> Moderate
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="hard" onclick="selectMode('hard')"> Hard
+                </label>
+            </div>
+            <div id="essayQuestion" class="hidden">
+                <h3>Essay Question:</h3>
+                <p id="questionText"></p>
+            </div>
+            <div id="timer" class="hidden">
+                Time Left: <span id="timeDisplay">00:00</span>
+            </div>
+            <div id="essayArea" class="hidden">
+                <textarea id="essayText" rows="10" cols="50" placeholder="Write your essay here..." oninput="countWords()"></textarea>
+                <p>Word Count: <span id="wordCount">0</span> / Min: <span id="minWords">0</span>, Max: <span id="maxWords">0</span></p>
+                <p id="warningMessage" class="warning hidden">Warning: Time is almost up!</p>
+                <p id="wordWarningMessage" class="warning hidden">Max word limit exceeded!</p>
+            </div>
+            <button type="button" id="submitButton" class="hidden" onclick="submitEssay()">Submit</button>
+        </form>
+        <div id="submittedText" class="hidden">
+            <h3>Your Submitted Essay:</h3>
+            <textarea id="submittedEssay" rows="10" cols="50" readonly></textarea>
+        </div>
+    </div>
+    <script src="js/exam.js"></script>
+</body>
+
+</html>

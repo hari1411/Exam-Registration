@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* For positioning the timer */
+}
+
+/* Rules Section */
+.rules {
+    background-color: #e7f1ff;
+    border: 1px solid #b3d4fc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.rules h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.rules ul {
+    padding-left: 20px;
+}
+
+.rules li {
+    margin-bottom: 10px;
+}
+
+/* Mode Selection */
+#selectModeText {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#modeSelection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#modeSelection label {
+    font-size: 18px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#modeSelection input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Essay Question */
+#essayQuestion {
+    margin-top: 40px;
+}
+
+#essayQuestion h3 {
+    font-size: 26px; /* Larger font size for question */
+    font-weight: bold; /* Bold text for question */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#essayQuestion p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Timer */
+#timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* Essay Area */
+#essayArea {
+    margin-top: 20px;
+}
+
+#essayText {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+#wordCount, #maxWords {
+    font-weight: bold;
+}
+
+.warning {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Button Styles */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#submitButton {
+    background-color: #007bff;
+}
+
+#submitButton:hover {
+    background-color: #0056b3;
+}
+
+/* Submitted Essay */
+#submittedText {
+    margin-top: 20px;
+}
+
+#submittedEssay {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: pre-wrap; /* Preserve whitespace formatting */
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Highlight Exceeded Words */
+.exceed {
+    color: #dc3545;
+}
+
+.within-limit {
+    color: #333;
+}
+#essayTextDisplay {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    overflow-wrap: break-word;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+#essayTextDisplay span {
+    display: inline;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+#timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    background: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
